@@ -114,6 +114,33 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 Con esto actualizamos en Github la pagina de nuestro repositorio y ya lo tenemos en la nube.
 <img src="https://fom78-web.vercel.app/img/blog/git-02.png" alt="Primer repositorio en la nube" loading="lazy">
 
+Para ir cerrando el ciclo, podemos agregar un README desde local o en la nube, lo vamos a hacer desde la nube, aprovecahndo donde estamos le damos al boton **Add a README** y en la misma pagina de GitHub nos abre el editor para escribir en formato Markdown, en este ejemplo copio el codigo que he estado escribiendo y lo pego en el editor.
+
+Y para aceptarlo y comitearlo:
+
+<img src="https://fom78-web.vercel.app/img/blog/git-03.png" alt="Primer repositorio en la nube" loading="lazy">
+
+Hacemos clic en Commit new file, y ya tenemos el archivo agregado en el repositorio remoto (en la web), pero este cambio no esta en el local, para traernos lo que esta en la nube, desde la consola en nustro directorio del repositorio hacemos un git pull
+
+```sh
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 2.34 KiB | 141.00 KiB/s, done.
+From github.com:fom78/git-ejemplo
+   3c14c27..5e85c84  main       -> origin/main
+Updating 3c14c27..5e85c84
+Fast-forward
+ README.md | 121 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 121 insertions(+)
+ create mode 100644 README.md
+
+```
+
+En este momento tenemos la copia del remoto identica al local, si trabajamos en el local, para subir los cambios nuevamente se comiteara y se hara un push al remoto.
+
 ### Para culminar una imagen como resumen
 
 <img src="https://fom78-web.vercel.app/img/blog/git-resumen.png" alt="Resumen Git" loading="lazy">
