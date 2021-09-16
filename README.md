@@ -146,3 +146,5 @@ En este momento tenemos la copia del remoto identica al local, si trabajamos en 
 <img src="https://fom78-web.vercel.app/img/blog/git-resumen.png" alt="Resumen Git" loading="lazy">
 
 <br><hr><br>
+
+Intento de primer Pull requests
